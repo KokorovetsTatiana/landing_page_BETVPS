@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BETVPS</title>
+    <link rel="shortcut icon" href="/images/Favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/main.css"> -->
+</head>
+<body>
+    <module href="./partials/1_navigation.html">
+    <main>
+        <module href="/partials/2_hero.html">
+        <module href="/partials/3_advantages.html">
+        <!-- <section w3-include-html="./partials/4_about.html" class="about"></section> -->
+        <!-- <section w3-include-html="./partials/5_price.html" class="price"></section> -->
+        <!-- <section w3-include-html="./partials/6_choise.html" class="choise"></section> -->
+        <!-- <section w3-include-html="./partials/7_questions.html" class="questions"></section> -->
+        <!-- <section w3-include-html="./partials/8_feedback.html" class="feedback"></section> -->
+    </main>
+    <!-- <section w3-include-html="./partials/9_footer.html"></section> -->
+    
+    <!-- <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="closing-button" data-modal-close>
+                <svg class="cross" width="11" height="11">
+                     <use class="" href="./images/icons/sprite.svg#cross"></use> 
+                </svg>
+            </button>
+            <form class="sign-form">
+                <ol>
+                    <li>
+                        <h4>Выберите способ оплаты</h4>
+                        <p>Выберите для себя наиболее удобный способ</p>
+                        <ul>
+                            <li>
+                                <svg></svg>
+                            </li>
+                            <li>
+                                <svg></svg>
+                            </li>
+                            <li>
+                                <svg></svg>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Введите свой корректный E-mail</h4>
+                        <p>На Вашу почту придут данные для подключения к VPS</p>
+                        <div class="">
+                            <label class="" for="mail"></label>
+                            <input class="input-field" type="email" id="mail" />
+                            <svg class="form-icon" width="12" height="12">
+                                <use class="" href="./images/icons/sprite.svg#icon-mail"></use> 
+                            </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Дополнительно</h4>
+                        <p>Выберите количество и введите промокод, если он есть</p>
+                        <div class="">
+                            <label class="" for="mail"></label>
+                            <input class="input-field" type="email" id="mail" />
+                            <svg class="form-icon" width="12" height="12">
+                                <use class="" href="./images/icons/sprite.svg#icon-mail"></use>
+                            </svg>
+                        </div>
+                        <div class="">
+                            <label class="" for="mail"></label>
+                            <input class="input-field" type="email" id="mail" />
+                            <svg class="form-icon" width="12" height="12">
+                                <use class="" href="./images/icons/sprite.svg#icon-mail"></use>
+                            </svg>
+                        </div>
+                    </li>
+                </ol>
+                <a>Политика безопасности</a>
+                <button>Перейти к оплате</button>
+                <p>Сумма к оплате (грн):</p>
+                <p>2700</p>                                         
+            </form>
+        </div>
+    </div> -->
+    
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /* Loop through a collection of all HTML elements: */
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /* Make an HTTP request using the attribute value as the file name: */
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                            if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                            /* Remove the attribute, and call this function once more: */
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /* Exit the function: */
+                    return;
+                }
+            }
+        }
+    </script>
+
+    <script>
+        includeHTML();
+    </script>
+
+</body>
+</html>

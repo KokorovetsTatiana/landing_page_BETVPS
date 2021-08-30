@@ -1,0 +1,65 @@
+header {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+
+  border-bottom: 1px solid $line-color;
+}
+
+.navigation-menu {
+  display: none;
+  color: $primary-color;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.219;
+}
+
+@media screen and (min-width: $tablet) {
+  .navigation-menu {
+    display: flex;
+  }
+}
+
+.nav-menu_item:not(:last-child) {
+  margin-right: 43px;
+}
+
+.nav-btn {
+  display: none;
+  background-color: transparent;
+  border: 2px solid $secondary-color;
+  color: $secondary-color;
+  box-shadow: 0 0 10px $secondary-color;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.219;
+
+  transition-duration: 300ms;
+  @extend %transitionTF;
+}
+
+.nav-btn:hover,
+.nav-btn:focus {
+  border: 2px solid $primary-color;
+  color: $primary-color;
+  box-shadow: 0 0 10px $primary-color;
+}
+
+@media screen and (min-width: $desktop) {
+  .nav-btn {
+    display: flex;
+  }
+}
+
+body {
+  background-color: rgb(43, 38, 38);
+}

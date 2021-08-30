@@ -1,0 +1,17 @@
+@import "./utils/placeholders";
+@import "./utils/variables";
+@import "./base.scss/normalize";
+@import "./utils/breakpoints";
+@import "./base.scss/base";
+
+@import "./common/common";
+
+@import "./components/1navigation";
+@import "./components/2hero";
+@import "./components/3advantages";
+@import "./components/4about";
+@import "./components/5price";
+@import "./components/6choise";
+@import "./components/7questions";
+@import "./components/8ask";
+@import "./components/9footer";
