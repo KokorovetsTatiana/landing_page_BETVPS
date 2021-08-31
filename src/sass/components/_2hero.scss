@@ -2,15 +2,27 @@
   padding: 260px 60px 180px 60px;
   text-align: center;
   background-color: peru;
-
+  background-image: url(../images/hero/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .hero_title {
+  margin-bottom: 55px;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
   line-height: 1.23;
   color: white;
+}
+
+@media screen and (min-width: $tablet) {
+  .hero_list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.hero_elems {
+  margin-bottom: 30px;
 }

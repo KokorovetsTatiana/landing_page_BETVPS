@@ -22,12 +22,13 @@
   "homepage": "https://github.com/KokorovetsTatiana/landing_page_BETVPS#readme",
   "dependencies": {
     "gh-pages": "^3.2.3",
+    "node-sass": "^6.0.1",
     "parcel-bundler": "^1.12.5",
     "posthtml-img-autosize": "^0.1.6",
-    "posthtml-include": "^1.7.1",
-    "sass": "^1.38.2"
+    "posthtml-include": "^1.7.1"
   },
   "devDependencies": {
-    "posthtml-modules": "^0.7.4"
+    "posthtml-modules": "^0.7.4",
+    "sass": "^1.38.2"
   }
 }
